@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chu vi va dien tich hinh vuong</title>
+</head>
+<body>
+<input type="number" id="number" value="" placeholder="nhap vao canh hinh vuong">
+<button onclick="clickme()">ket qua</button>
+<p id="dientich"></p>
+<script>
+    function clickme() {
+        let a = document.getElementById("number").value;
+        let P = 4*a;
+        let S = a*a;
+        document.getElementById("dientich").innerHTML=P + "<br>" + S;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kiem tra tam giac</title>
+</head>
+<body>
+<input type="number" id="canha" value="" placeholder="nhap vao canh a">
+<input type="number" id="canhb" value="" placeholder="nhap vao canh b">
+<input type="number" id="canhc" value="" placeholder="nhap vao canh c">
+<button onclick="ketqua()">ket qua</button>
+<p id="demo"></p>
+<script>
+    function ketqua() {
+        let canha = document.getElementById("canha").value;
+        let canhb = document.getElementById("canhb").value;
+        let canhc = document.getElementById("canhc").value;
+        a = Number(canha);
+        b = Number(canhb);
+        c = Number(canhc);
+        if (a < b + c && b < a + c && c < a + b) {
+            if (a*a == b*b+c*c || b*b == a*a+c*c || c*c == a*a+b*b) {
+                document.getElementById("demo").innerHTML="day la tam giac vuong"
+                }else {
+                if (a == b && b == c) {
+                    document.getElementById("demo").innerHTML="day la tam giac deu"
+                }else {
+                    if (a == b || a == c || b == c) {
+                        document.getElementById("demo").innerHTML="day la tam giac can"
+                    }else {
+                        document.getElementById("demo").innerHTML="day la mot tam giac binh thuong"
+                    }
+                }
+            }
+        }else{
+            document.getElementById("demo").innerHTML= "day khong phai la 3 canh cua mot tam giac";
+        }
+    }
+</script>
+</body>
+</html>

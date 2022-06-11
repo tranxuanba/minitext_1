@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!-- câu lệnh để nhập 1 giá trị từ hộp thoại là: alert ()-->
+<input type="number" id="number" value="" placeholder="nhap so o day">
+<button onclick="ketqua()">ket qua</button>
+<script>
+    function ketqua() {
+        let number1 = document.getElementById("number").value;
+        let binhphuong = number1*number1;
+        alert("binh phuong cua " + number1 + "  la: " +  binhphuong);
+    }
+</script>
+</body>
+</html>

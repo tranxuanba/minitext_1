@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuyen tu nam sang the ky</title>
+</head>
+<body>
+<input type="number" id="year" value="" placeholder="moi nhap so nam">
+<button onclick="ketqua()">ket qua</button>
+<p id="demo"></p>
+<script>
+    function ketqua() {
+        let a = document.getElementById("year").value;
+        nam = Number(a);
+        let theky;
+        if (nam % 100 == 0) {
+            theky = nam/100;
+            document.getElementById("demo").innerHTML=theky;
+        }else {
+            theky = parseInt(nam/100) + 1;
+            document.getElementById("demo").innerHTML=theky;
+        }
+    }
+</script>
+</body>
+</html>

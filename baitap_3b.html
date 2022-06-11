@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="number1" value="" placeholder="nhap vao so a">
+<input type="number" id="number2" value="" placeholder="nhap vao so b">
+<button onclick="ketqua()">ket qua</button>
+<p id="demo"></p>
+<script>
+    function ketqua() {
+        let a = document.getElementById("number1").value;
+        let b = document.getElementById("number2").value;
+        let binhphuong = a*a;
+        let tich = a*b;
+        document.getElementById("demo").innerHTML=binhphuong + "<br>" + tich;
+    }
+</script>
+</body>
+</html>
